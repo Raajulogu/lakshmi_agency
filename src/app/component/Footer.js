@@ -1,0 +1,94 @@
+"use client";
+
+import Link from "next/link";
+
+export default function Footer({click,setClick}) {
+  return (
+    <div className="absolute bottom-1 items-center web:hidden flex justify-around w-screen h-[68px] shrink-0 bg-[#FFF] shadow-[0_-2px_15px_0px_rgba(0,0,0,0.05)]">
+      <Link href="/">
+        <button className="flex flex-col items-center">
+          <img
+            className="w-[26px] h-[26px] shrink-0"
+            src="https://s3-alpha-sig.figma.com/img/9165/f07f/ea5c739edc8fa67dcf187b52b93c8385?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e8AAp7w8KX5rkUB50MueNDWcK0qnQ3HjDjjP1-9uZjpBwvSY08WZGUcVkZMneyQ3BFGDaL1rGT2WCHNsdPlO25Kw-ReaS3q0tiFyv6HISEtS9eBKhGG77tsBATqzqSjs7U~f2SIo8CpHQL9Pakvzv1lALBCRDHDEo5v-X1HiAuYVyKSuuInkzv9Vo3skEPlCBe-nNLd0~-d12Ov-FEVq4XUAvDkZ~HNWuAPcvLi7eej4VRLk8mWe6mGo7GmJyxHJQtRDk8wKWqiGi1E9Iv0lw9hIOJOghUV9LN~oLVKXI78Ioc~IQFXYkHdzDHB2-zOZHUH3hgaIcxFQhwtAsyPbfA__"
+            alt="Home"
+          />
+          <p className="text-[#999] text-center font-roboto text-[12px] font-[400] capitalize leading-[100%]">
+            Home
+          </p>
+        </button>
+      </Link>
+
+      <Link href="/project">
+        <button className="flex flex-col items-center">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/555a/097d/0a466e6e330f8a2ecfa1dc96b84e9469?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GWA4wC2wiAowo5f~mj0KCSye8zGfHM6vzq6iKINa8yMydjoWclZlHEZisZAE4wCNNhjHwGby3y65r4aCUS~QbBDmbQLJ10T6cfOFBpqXScFjUG~oeoPcRIovBpmoEGr1i4FUmO0o7lHssAaV~BNaUuQ1uav69ggjDbQFJGFXUg0GJD9bnPzgE2NvdxWQO-z7iD4fqOjpcLLQN1R2vljbPHczVUk38x~5hdN2C2rpToKiq~C3B~sjTj-QGd3jXeJK5nxnMAbvMBVroeoMXQbCPMXDtnyh-lbtc~GfyeQhOV6IwC2E~YUgwG2eanPHLVcgmMn9zzMiO7GIjVD51iTGtw__"
+            alt="Projects"
+            className="width-[24px] h-[26px] shrink-0"
+          />
+          <p className="text-[#000] text-center font-roboto text-[12px] font-[400] capitalize leading-[100%]">
+            Projects
+          </p>
+        </button>
+      </Link>
+
+      <Link href="/explore">
+        <button className="flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+          >
+            <path
+              d="M7.94158 23.8008H18.9092C20.1987 23.8004 21.4357 23.2901 22.3504 22.3812L22.3658 22.3658L22.3826 22.3504C23.293 21.4334 23.8029 20.193 23.8008 18.9008V7.94018C24.6772 9.02238 25.2008 10.4 25.2008 11.9022V18.9022C25.2008 20.573 24.537 22.1755 23.3556 23.357C22.1741 24.5384 20.5716 25.2022 18.9008 25.2022H11.9008C10.4594 25.2042 9.06129 24.7098 7.94158 23.8022V23.8008ZM21.376 3.82558C21.701 4.15065 21.9587 4.53655 22.1346 4.96125C22.3104 5.38595 22.4009 5.84112 22.4008 6.30078V18.9008C22.4008 19.829 22.032 20.7193 21.3757 21.3757C20.7193 22.032 19.829 22.4008 18.9008 22.4008H6.30078C5.37252 22.4008 4.48228 22.032 3.82591 21.3757C3.16953 20.7193 2.80078 19.829 2.80078 18.9008V6.30078C2.80078 5.37252 3.16953 4.48229 3.82591 3.82591C4.48228 3.16953 5.37252 2.80078 6.30078 2.80078H18.9008C19.3604 2.8007 19.8156 2.89115 20.2403 3.06699C20.665 3.24283 21.0509 3.5006 21.376 3.82558ZM6.30078 4.20078L6.09918 4.21058C5.57956 4.2607 5.09723 4.50256 4.74625 4.889C4.39527 5.27543 4.20081 5.77875 4.20078 6.30078V8.40078H8.40078V4.20078H6.30078ZM15.4008 4.20078H9.80078V8.40078H15.4008V4.20078ZM21.0008 6.30078L20.991 6.09918C20.9409 5.57956 20.699 5.09723 20.3126 4.74625C19.9261 4.39527 19.4228 4.20081 18.9008 4.20078H16.8008V8.40078H21.0008V6.30078ZM9.80078 9.80078V15.4008H15.4008V9.80078H9.80078ZM21.0008 9.80078H16.8008V15.4008H21.0008V9.80078ZM9.80078 16.8008V21.0008H15.4008V16.8008H9.80078ZM21.0008 16.8008H16.8008V21.0008H18.9008L19.1024 20.991C19.622 20.9409 20.1043 20.699 20.4553 20.3126C20.8063 19.9261 21.0008 19.4228 21.0008 18.9008V16.8008ZM4.88958 20.4548C5.27579 20.8058 5.77888 21.0005 6.30078 21.0008H8.40078V16.8008H4.20078V18.9008L4.21058 19.1024C4.26098 19.6219 4.50304 20.104 4.88958 20.4548ZM4.20078 9.80078V15.4008H8.40078V9.80078H4.20078Z"
+              fill="#999999"
+            />
+          </svg>
+          <p className="text-[#999] text-center font-roboto text-[12px] font-[400] capitalize leading-[100%]">
+            Explore
+          </p>
+        </button>
+      </Link>
+      <Link href="/cart">
+        <button className="flex flex-col items-center">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.0078 14.5078C13.3464 14.1693 13.737 14 14.1797 14C14.6224 14 15 14.1693 15.3125 14.5078C15.651 14.8464 15.8203 15.237 15.8203 15.6797C15.8203 16.1224 15.651 16.513 15.3125 16.8516C15 17.1641 14.6224 17.3203 14.1797 17.3203C13.737 17.3203 13.3464 17.1641 13.0078 16.8516C12.6693 16.513 12.5 16.1224 12.5 15.6797C12.5 15.237 12.6693 14.8464 13.0078 14.5078ZM0.820312 0.679688H3.55469L4.33594 2.32031H16.6797C16.9141 2.32031 17.1094 2.41146 17.2656 2.59375C17.4219 2.75 17.5 2.94531 17.5 3.17969C17.5 3.20573 17.4609 3.33594 17.3828 3.57031L14.4141 8.96094C14.1016 9.53385 13.6198 9.82031 12.9688 9.82031H6.75781L6.01562 11.1875L5.97656 11.3047C5.97656 11.4349 6.04167 11.5 6.17188 11.5H15.8203V13.1797H5.82031C5.3776 13.1797 4.98698 13.0104 4.64844 12.6719C4.33594 12.3333 4.17969 11.9427 4.17969 11.5C4.17969 11.2396 4.24479 10.9792 4.375 10.7188L5.50781 8.64844L2.5 2.32031H0.820312V0.679688ZM4.64844 14.5078C4.98698 14.1693 5.3776 14 5.82031 14C6.26302 14 6.65365 14.1693 6.99219 14.5078C7.33073 14.8464 7.5 15.237 7.5 15.6797C7.5 16.1224 7.33073 16.513 6.99219 16.8516C6.65365 17.1641 6.26302 17.3203 5.82031 17.3203C5.3776 17.3203 4.98698 17.1641 4.64844 16.8516C4.33594 16.513 4.17969 16.1224 4.17969 15.6797C4.17969 15.237 4.33594 14.8464 4.64844 14.5078Z"
+              fill="black"
+              fill-opacity="0.6"
+            />
+          </svg>
+
+          <p className="text-[#999] text-center font-roboto text-[12px] font-[400] capitalize leading-[100%]">
+            Cart
+          </p>
+        </button>
+      </Link>
+
+        <button className="flex flex-col items-center" onClick={()=>setClick(!click)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 8.39C13.57 9.4 15.42 10 17.42 10C18.2 10 18.95 9.91 19.67 9.74C19.88 10.45 20 11.21 20 12C20 16.41 16.41 20 12 20C9 20 6.39 18.34 5 15.89L6.75 14V13C6.75 12.6685 6.8817 12.3505 7.11612 12.1161C7.35054 11.8817 7.66848 11.75 8 11.75C8.33152 11.75 8.64946 11.8817 8.88388 12.1161C9.1183 12.3505 9.25 12.6685 9.25 13V14H12V8.39ZM16 11.75C15.6685 11.75 15.3505 11.8817 15.1161 12.1161C14.8817 12.3505 14.75 12.6685 14.75 13C14.75 13.3315 14.8817 13.6495 15.1161 13.8839C15.3505 14.1183 15.6685 14.25 16 14.25C16.3315 14.25 16.6495 14.1183 16.8839 13.8839C17.1183 13.6495 17.25 13.3315 17.25 13C17.25 12.6685 17.1183 12.3505 16.8839 12.1161C16.6495 11.8817 16.3315 11.75 16 11.75Z"
+              fill="#666666"
+            />
+          </svg>
+          <p className="text-[#999] text-center font-roboto text-[12px] font-[400] capitalize leading-[100%]">
+            My Account
+          </p>
+        </button>
+    </div>
+  );
+}
